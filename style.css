@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth; 
+  }
+
 /* Прижимаю footer к низу страницы*/
 
 body {
@@ -11,17 +15,39 @@ body {
     justify-content: space-between;
 }
 
+/*----------------------------------*/
+
 header, main, footer {
-    border: 1px solid red;
+    border: 1px solid rgb(63, 54, 54);
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-  }
+}
 
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: rgb(63, 54, 54);
+    font-size: 17px;
+    transition: .3s; 
+}
+
+.nav-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+
+.nav-item a:hover {
+    color: #4d2323;
   }
